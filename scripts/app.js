@@ -19,32 +19,32 @@ let activeSlideIndex = 0
 // }).then
 //
 
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(() => {
-        changeSlide('up')
-        setTimeout(() => {
-            changeSlide('up')
-            setTimeout(() => {
-                changeSlide('up')
-                setTimeout(() => {
-                    changeSlide('up')
-                    setTimeout(() => {
-                        changeSlide('up')
-                        setTimeout(() => {
-                            changeSlide('up')
-                            setTimeout(() => {
-                                changeSlide('up')
-                                setTimeout(() => {
-                                    changeSlide('up')
-                                },1500)
-                            },1500)
-                        },1500)
-                    },1500)
-                },1500)
-            },1500)
-        },1500)
-    },1500)
-})
+// document.addEventListener('DOMContentLoaded', function () {
+//     setTimeout(() => {
+//         changeSlide('up')
+//         setTimeout(() => {
+//             changeSlide('up')
+//             setTimeout(() => {
+//                 changeSlide('up')
+//                 setTimeout(() => {
+//                     changeSlide('up')
+//                     setTimeout(() => {
+//                         changeSlide('up')
+//                         setTimeout(() => {
+//                             changeSlide('up')
+//                             setTimeout(() => {
+//                                 changeSlide('up')
+//                                 setTimeout(() => {
+//                                     changeSlide('up')
+//                                 },1500)
+//                             },1500)
+//                         },1500)
+//                     },1500)
+//                 },1500)
+//             },1500)
+//         },1500)
+//     },1500)
+// })
 
 
 upBtn.addEventListener('click', function () {
