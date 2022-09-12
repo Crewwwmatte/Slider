@@ -1,5 +1,5 @@
 // console.log('Yo')
-
+// const body = document.querySelector('body')
 const upBtn = document.querySelector('.up-button')
 const downBtn = document.querySelector('.down-button')
 const container = document.querySelector('.container')
@@ -10,6 +10,42 @@ const slidesCount = mainSlide.querySelectorAll('div').length
 sidebar.style.top = `-${(slidesCount - 1) * 100}vh`
 
 let activeSlideIndex = 0
+
+// const slide = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         changeSlide('up')
+//         resolve()
+//     },1500)
+// }).then
+//
+
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+        changeSlide('up')
+        setTimeout(() => {
+            changeSlide('up')
+            setTimeout(() => {
+                changeSlide('up')
+                setTimeout(() => {
+                    changeSlide('up')
+                    setTimeout(() => {
+                        changeSlide('up')
+                        setTimeout(() => {
+                            changeSlide('up')
+                            setTimeout(() => {
+                                changeSlide('up')
+                                setTimeout(() => {
+                                    changeSlide('up')
+                                },1500)
+                            },1500)
+                        },1500)
+                    },1500)
+                },1500)
+            },1500)
+        },1500)
+    },1500)
+})
+
 
 upBtn.addEventListener('click', function () {
     changeSlide('up')
@@ -34,4 +70,11 @@ function changeSlide(direction) {
 
     mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
     sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
+}
+
+function go() {
+    setTimeout(() => {
+        changeSlide('up')
+        resolve()
+    },1500)
 }
