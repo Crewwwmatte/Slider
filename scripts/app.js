@@ -41,5 +41,5 @@ function changeSlide(direction) {
 function nextSlide() {
     setInterval(() => {
         changeSlide('up')
-    }, 3000)
+    }, 3500)
 }
