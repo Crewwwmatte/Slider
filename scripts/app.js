@@ -11,41 +11,7 @@ sidebar.style.top = `-${(slidesCount - 1) * 100}vh`
 
 let activeSlideIndex = 0
 
-// const slide = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         changeSlide('up')
-//         resolve()
-//     },1500)
-// }).then
-//
-
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(() => {
-        changeSlide('up')
-        setTimeout(() => {
-            changeSlide('up')
-            setTimeout(() => {
-                changeSlide('up')
-                setTimeout(() => {
-                    changeSlide('up')
-                    setTimeout(() => {
-                        changeSlide('up')
-                        setTimeout(() => {
-                            changeSlide('up')
-                            setTimeout(() => {
-                                changeSlide('up')
-                                setTimeout(() => {
-                                    changeSlide('up')
-                                },1500)
-                            },1500)
-                        },1500)
-                    },1500)
-                },1500)
-            },1500)
-        },1500)
-    },1500)
-})
-
+document.addEventListener('DOMContentLoaded', nextSlide)
 
 upBtn.addEventListener('click', function () {
     changeSlide('up')
@@ -72,9 +38,8 @@ function changeSlide(direction) {
     sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`
 }
 
-function go() {
-    setTimeout(() => {
+function nextSlide() {
+    setInterval(() => {
         changeSlide('up')
-        resolve()
-    },1500)
+    }, 3000)
 }
